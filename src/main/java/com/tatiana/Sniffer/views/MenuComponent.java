@@ -1,4 +1,4 @@
-package com.tatiana.Sniffer.view;
+package com.tatiana.Sniffer.views;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -35,7 +35,7 @@ public class MenuComponent {
 	
 	public void chooseDevice(ActionEvent event) {
 		System.out.println("Choose devices");
-		DialogChooseDevice dialogChoose = new DialogChooseDevice();
+		DialogChooseDeviceView dialogChoose = new DialogChooseDeviceView();
 		dialogChoose.show();
 	}
 }

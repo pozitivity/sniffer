@@ -19,7 +19,7 @@ import org.jnetpcap.protocol.tcpip.Tcp;
 import org.jnetpcap.protocol.tcpip.Http.Request;
 import org.jnetpcap.protocol.tcpip.Http.Response;
 
-import com.tatiana.Sniffer.view.Main;
+import com.tatiana.Sniffer.views.Main;
 
 
 public class App
@@ -124,10 +124,11 @@ public class App
         int i = 0;
         stringAllDevs = new ArrayList<String>();
         for (PcapIf device: alldevs) {
-        	stringAllDevs.add(i, device.getName());
+        	stringAllDevs.add(i, device.getName()/* + "\t\t" + device.getDescription()*/);
         	System.out.println("#" + i++ + device.getName() + "  " + device.getDescription());
         }
         
         return (ArrayList<String>) stringAllDevs;
     }
+    
 }

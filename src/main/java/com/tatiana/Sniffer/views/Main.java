@@ -1,4 +1,4 @@
-package com.tatiana.Sniffer.view;
+package com.tatiana.Sniffer.views;
 
 import javafx.application.Application;
 import javafx.scene.Group;
